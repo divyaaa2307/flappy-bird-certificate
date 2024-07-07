@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Post+No+Bills+Colombo:wght@800&display=swap');
+.w-74 {
+  width: 69%;
+}
+.h-62{
+  height:62%;
+}
+.w-69 {
+  width: 99%;
+}
+.h-56{
+  height:56%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.w-01{
+  width:12%;
+  height:12%;
 }
+.w-sma{
+  width:20%;
+  height:20%;
+}
+.h-90{
+  height:90%;
+}
+.ull{
+  border-bottom: 1px solid #000;
+  padding-bottom: 3px;
+}
+.borderr{
+  border-color: #DCA231;
+  border-width: 5px;
+  
+}
+.congrats{
+  font-family:'Inter', sans-serif;
+  color:#076717;
+  
+}
+.w-90{
+  width:90%;
+}
+
+
+@font-face {
+  font-family: 'Post No Bills Colombo';
+  src: url('./PostNoBillsColombo-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+.gamefont {
+  font-family: 'Post No Bills Colombo', sans-serif;
+  font-weight: 800;
+  color: #076717;
+}
+.buttton{
+  background-color: #DCC131;
+  color:black;
+  font-family:'Post No Bills Colombo', sans-serif;
+  font-weight:800;
+  
+}
+
+

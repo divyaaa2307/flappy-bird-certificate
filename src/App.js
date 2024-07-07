@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import GameCertificate from './components/GameCertificate';
 
-function App() {
+const App = () => {
+  const [screen, setScreen] = useState('certificate');
+  const playerName = "PLAYER'S NAME"; // Replace with dynamic data
+  const score = 12345; // Replace with dynamic data
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {screen === 'certificate' && (
+        <GameCertificate screen={screen} setScreen={setScreen} playerName={playerName} score={score} />
+      )}
+      {screen === 'gameOver' && (
+        <div>Game Over Screen</div>
+      )}
     </div>
   );
-}
+};
 
 export default App;
